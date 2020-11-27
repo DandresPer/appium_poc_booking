@@ -1,0 +1,57 @@
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+ERROR:root:Test Failed
+INFO:root:start
+INFO:root:done
+ERROR:root:Test Failed
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+ERROR:root:Test Failed
+INFO:root:start
+INFO:root:done
+ERROR:root:Test Failed
+INFO:root:start
+INFO:root:done
+ERROR:root:Test Failed
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+ERROR:root:Cannot find element LOCATION
+INFO:root:start
+INFO:root:done
+ERROR:root:Cannot find element LOCATION
+INFO:root:start
+INFO:root:done
+ERROR:root:Cannot find element DATES
+INFO:root:start
+INFO:root:done
+INFO:root:start
+INFO:root:done
+ERROR:root:Cannot find element DATES

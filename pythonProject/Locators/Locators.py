@@ -1,0 +1,2 @@
+class Locator(object):
+    pass
