@@ -14,6 +14,7 @@ class TestCases(unittest.TestCase):
         self.driver = Driver()
 
     def test_account_selection(self):
+        Logger.log_assert(False, "Something failedddddddd")
         print('test_account_selection')
         login = LoginPopupScreen(self.driver)
         login.account_selection()

@@ -6,6 +6,7 @@ from pageobjects.selection_screens.location_selection_screen import DestinationS
 from Locators.LocatorsStayBookingScreen import LocatorsStayBookingScreen
 from selenium.common.exceptions import TimeoutException
 from Logger import log_assert
+import logging
 
 
 class StayBookingScreen:
@@ -20,11 +21,13 @@ class StayBookingScreen:
                 MobileBy.ID, LocatorsStayBookingScreen.group_android)))
             self.search_button = WebDriverWait(self.driver.instance, 5).until(EC.visibility_of_element_located((
                 MobileBy.ID, LocatorsStayBookingScreen.search_button_android)))
+            logging.error('ERROOOOOOOOOOR-----------------------')
         except TimeoutException:
             log_assert('location' in dir(self), "Cannot find element LOCATION")
             log_assert('dates' in dir(self), "Cannot find element DATES")
             log_assert('group' in dir(self), "Cannot find element GROUP")
             log_assert('search_button' in dir(self), "Cannot find element SEARCH_BUTTON")
+
     # STAY OPTIONS
     def tap_location(self):
         self.location.click()
