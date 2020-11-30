@@ -1,6 +1,5 @@
 import unittest
 
-import Logger
 from pageobjects.home_screen import HomeScreen
 from webdriver import Driver
 
@@ -10,7 +9,6 @@ class TestCases(unittest.TestCase):
     def setUp(self):
         print('Setting up driver')
         self.driver = Driver()
-        Logger.set_logger()
 
     def test_stay_search_flow(self):
         print('test_stay_search_flow')
