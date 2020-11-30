@@ -1,8 +1,8 @@
 import unittest
 
+import Logger
 from pageobjects.selection_screens.login_popup_screen import LoginPopupScreen
 from webdriver import Driver
-import Logger
 
 Logger.set_logger()
 

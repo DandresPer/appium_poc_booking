@@ -1,11 +1,11 @@
-import time
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.common.exceptions import TimeoutException
-from pageobjects.home_screen import HomeScreen
+
 from Locators.LocatorsLoginPopUpScreen import LocatorsLoginPopUpScreen
 from Logger import log_assert, error_log
+from pageobjects.home_screen import HomeScreen
 
 
 class LoginPopupScreen:

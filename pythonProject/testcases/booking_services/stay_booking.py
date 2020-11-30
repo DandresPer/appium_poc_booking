@@ -1,9 +1,8 @@
 import unittest
-from junit_xml import TestSuite, TestCase
 
+import Logger
 from pageobjects.home_screen import HomeScreen
 from webdriver import Driver
-import Logger
 
 
 class TestCases(unittest.TestCase):
@@ -26,4 +25,3 @@ class TestCases(unittest.TestCase):
     def tearDown(self):
         print('Quit driver')
         # self.driver.instance.quit()
-

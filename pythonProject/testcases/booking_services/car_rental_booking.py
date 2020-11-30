@@ -1,10 +1,7 @@
 import unittest
 
-from pageobjects.selection_screens.location_selection_screen import DestinationScreen
 from pageobjects.home_screen import HomeScreen
 from webdriver import Driver
-from pageobjects.booking_services_screens.car_rental_screen import CarRentalScreen
-from pageobjects.selection_screens.date_selection_screen import DateSelectionScreen
 
 
 class TestCases(unittest.TestCase):

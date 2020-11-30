@@ -1,9 +1,10 @@
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from pageobjects.selection_screens.location_selection_screen import DestinationScreen
-from pageobjects.selection_screens.date_selection_screen import DateSelectionScreen
+
 from Locators.LocatorsCarRentalScreen import LocatorsCarRentalScreen
+from pageobjects.selection_screens.date_selection_screen import DateSelectionScreen
+from pageobjects.selection_screens.location_selection_screen import DestinationScreen
 
 
 class CarRentalScreen:
@@ -27,4 +28,3 @@ class CarRentalScreen:
 
     def tap_search(self):
         self.search_button.click()
-

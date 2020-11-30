@@ -1,9 +1,10 @@
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.common.exceptions import TimeoutException
-from pageobjects.selection_screens.date_selection_screen import DateSelectionScreen
+
 from Locators.LocatorsLocationSelectionScreen import LocatorsLocationSelectionScreen
+from pageobjects.selection_screens.date_selection_screen import DateSelectionScreen
 
 
 class DestinationScreen:

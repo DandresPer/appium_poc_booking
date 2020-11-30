@@ -1,11 +1,8 @@
 import logging
-import pytest
 
 
 def set_logger():
     logging.basicConfig(filename='config_check_7.log', level=logging.NOTSET)
-
-   # pytest.main()
 
 
 def log_assert(test, msg):
