@@ -5,7 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from pageobjects.home_screen import HomeScreen
 from Locators.LocatorsLoginPopUpScreen import LocatorsLoginPopUpScreen
-from Logger import log_assert
+from Logger import log_assert, error_log
 
 
 class LoginPopupScreen:
@@ -16,7 +16,9 @@ class LoginPopupScreen:
                 MobileBy.ID, LocatorsLoginPopUpScreen.popup_android)))
         except TimeoutException:
             self.popup = None
+        error_log("ERROR IN LOGIN")
 
     def account_selection(self):
-        self.popup.click() if self.popup else log_assert(False, 'Test Failed')
+
+        self.popup.click() if self.popup else log_assert(False, 'Login Test Failed')
         return HomeScreen(self.driver)

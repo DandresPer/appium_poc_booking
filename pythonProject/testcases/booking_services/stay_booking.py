@@ -27,7 +27,3 @@ class TestCases(unittest.TestCase):
         print('Quit driver')
         # self.driver.instance.quit()
 
-
-if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestCases)
-    unittest.TextTestRunner(verbosity=2).run(suite)
